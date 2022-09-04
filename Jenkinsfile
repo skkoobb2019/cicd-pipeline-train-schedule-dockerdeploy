@@ -36,15 +36,6 @@ pipeline {
         }
     }   
 }
-In Jenkins, click Build Now.
-
-Note: The initial build may take several minutes to complete.
-
-In Docker Hub, under Repositories, select the train-schedule app.
-
-Click the Tags tab to verify that the build was pushed successfully.
-
-In GitHub, modify the Jenkinsfile to include a stage that pushes the build to the production server, and commit the changes.
 
 stage ('DeployToProduction') {
     when {
